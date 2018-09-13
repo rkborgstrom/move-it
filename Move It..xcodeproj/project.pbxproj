@@ -12,7 +12,9 @@
 		1F48234B214AD64300C8A050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F482349214AD64300C8A050 /* Main.storyboard */; };
 		1F48234D214AD64400C8A050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F48234C214AD64400C8A050 /* Assets.xcassets */; };
 		1F482350214AD64400C8A050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F48234E214AD64400C8A050 /* LaunchScreen.storyboard */; };
-		1F48235D214AEA3500C8A050 /* truck.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F48235C214AEA3500C8A050 /* truck.png */; };
+		1F482367214B018D00C8A050 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F482366214B018D00C8A050 /* Default-568h@2x.png */; };
+		1F482369214B044600C8A050 /* truck.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F482368214B044600C8A050 /* truck.png */; };
+		1F48236B214B05FF00C8A050 /* Mover Form View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48236A214B05FF00C8A050 /* Mover Form View Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,9 @@
 		1F48234C214AD64400C8A050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F48234F214AD64400C8A050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F482351214AD64400C8A050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F48235C214AEA3500C8A050 /* truck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = truck.png; path = ../../../Desktop/truck.png; sourceTree = "<group>"; };
+		1F482366214B018D00C8A050 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1F482368214B044600C8A050 /* truck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = truck.png; path = ../../Desktop/truck.png; sourceTree = "<group>"; };
+		1F48236A214B05FF00C8A050 /* Mover Form View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mover Form View Controller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		1F482339214AD64200C8A050 = {
 			isa = PBXGroup;
 			children = (
+				1F482366214B018D00C8A050 /* Default-568h@2x.png */,
 				1F482344214AD64200C8A050 /* Move It. */,
 				1F482343214AD64200C8A050 /* Products */,
 			);
@@ -58,13 +63,14 @@
 			children = (
 				1F482345214AD64200C8A050 /* AppDelegate.swift */,
 				1F482347214AD64300C8A050 /* ViewController.swift */,
+				1F48236A214B05FF00C8A050 /* Mover Form View Controller.swift */,
 				1F482349214AD64300C8A050 /* Main.storyboard */,
 				1F48234C214AD64400C8A050 /* Assets.xcassets */,
-				1F48235C214AEA3500C8A050 /* truck.png */,
+				1F482368214B044600C8A050 /* truck.png */,
 				1F48234E214AD64400C8A050 /* LaunchScreen.storyboard */,
 				1F482351214AD64400C8A050 /* Info.plist */,
 			);
-			path = "Move It.";
+			name = "Move It.";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +132,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F482350214AD64400C8A050 /* LaunchScreen.storyboard in Resources */,
-				1F48235D214AEA3500C8A050 /* truck.png in Resources */,
 				1F48234D214AD64400C8A050 /* Assets.xcassets in Resources */,
+				1F482369214B044600C8A050 /* truck.png in Resources */,
+				1F482367214B018D00C8A050 /* Default-568h@2x.png in Resources */,
 				1F48234B214AD64300C8A050 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F482348214AD64300C8A050 /* ViewController.swift in Sources */,
+				1F48236B214B05FF00C8A050 /* Mover Form View Controller.swift in Sources */,
 				1F482346214AD64200C8A050 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J4C36DDS2H;
-				INFOPLIST_FILE = "Move It./Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J4C36DDS2H;
-				INFOPLIST_FILE = "Move It./Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
