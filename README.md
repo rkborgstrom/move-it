@@ -35,7 +35,7 @@ By connecting users who wish to move and users who own a truck to connect depend
 
 ## ERD - Entity Relationship Diagram
 
-* ![Nav](/Images/Screen Shot 2018-09-14 at 9.41.53 AM.png)
+* ![ERD](https://github.com/rkborgstrom/move-it/blob/master/Images/Screen%20Shot%202018-09-14%20at%209.41.53%20AM.png)
 
 
 
