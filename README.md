@@ -5,7 +5,7 @@ Move It. A peer-to-peer web application that enables users who are in the proces
 People are always looking to move and many don't want to pay a moving company or rent a U-Haul.
 
 ## How will your project solve this problem?
-By connecting users who wish to move and users who own a truck to connect depending on their location. 
+By connecting users who wish to move and users who own a truck depending on their location. 
 
 ## 5 user stories (at least):
 
