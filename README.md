@@ -40,12 +40,4 @@ By connecting users who wish to move and users who own a truck to connect depend
 
 
 ## Wireframes
-
-Inlcude some wireframes of your project.
-* **You can draw them out & take a picture (quickest option) or use:**
-* [Wireframe.cc](https://wireframe.cc/)
-* [Draw.io](https://www.draw.io/)
-* [Lucidchart](https://www.lucidchart.com/)
-* Any other software you like
-
-Do not spend more than 2 hours on your wireframes.
+* ![ERD](https://github.com/rkborgstrom/move-it/blob/master/Images/Screen%20Shot%202018-09-14%20at%2010.16.30%20AM.png)
