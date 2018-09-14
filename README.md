@@ -22,11 +22,12 @@ By connecting users who wish to move and users who own a truck depending on thei
 
 ## What technologies do you plan to use?
 
+* MongoDB
+  * Mongoose
 * Express Server
 * Swift
 * XCode
 * Node.js
-* Realm Database
 
 **Stretch**  
 * Stripe.js
