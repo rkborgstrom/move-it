@@ -15,6 +15,7 @@
 		1F482367214B018D00C8A050 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F482366214B018D00C8A050 /* Default-568h@2x.png */; };
 		1F482369214B044600C8A050 /* truck.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F482368214B044600C8A050 /* truck.png */; };
 		1F48236B214B05FF00C8A050 /* Mover Form View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48236A214B05FF00C8A050 /* Mover Form View Controller.swift */; };
+		1F48236D215054A500C8A050 /* Moving Post Page ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48236C215054A500C8A050 /* Moving Post Page ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1F482366214B018D00C8A050 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1F482368214B044600C8A050 /* truck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = truck.png; path = ../../Desktop/truck.png; sourceTree = "<group>"; };
 		1F48236A214B05FF00C8A050 /* Mover Form View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mover Form View Controller.swift"; sourceTree = "<group>"; };
+		1F48236C215054A500C8A050 /* Moving Post Page ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moving Post Page ViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				1F482347214AD64300C8A050 /* ViewController.swift */,
 				1F48236A214B05FF00C8A050 /* Mover Form View Controller.swift */,
 				1F482349214AD64300C8A050 /* Main.storyboard */,
+				1F48236C215054A500C8A050 /* Moving Post Page ViewController.swift */,
 				1F48234C214AD64400C8A050 /* Assets.xcassets */,
 				1F482368214B044600C8A050 /* truck.png */,
 				1F48234E214AD64400C8A050 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			files = (
 				1F482348214AD64300C8A050 /* ViewController.swift in Sources */,
 				1F48236B214B05FF00C8A050 /* Mover Form View Controller.swift in Sources */,
+				1F48236D215054A500C8A050 /* Moving Post Page ViewController.swift in Sources */,
 				1F482346214AD64200C8A050 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
