@@ -10,8 +10,17 @@ import UIKit
 
 class Moving_Post_Page_ViewController: UIViewController {
 
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    
+    var finalName = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        nameLabel.text = finalName
 
         guard let url = URL(string: "https://gentle-tor-12481.herokuapp.com/all_users") else {return}
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in

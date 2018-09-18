@@ -97,12 +97,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
+            <point key="canvasLocation" x="-1257" y="32"/>
         </scene>
-        <!--Moving Form-->
+        <!--Moving_Form-->
         <scene sceneID="Ig3-0j-jdo">
             <objects>
-                <viewController title="Moving Form" id="y5F-og-jLs" sceneMemberID="viewController">
+                <viewController title="Moving_Form" id="y5F-og-jLs" customClass="Moving_Form" customModule="Move_It_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ENb-Ve-hqk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,11 +178,11 @@
                                 <rect key="frame" x="159" y="536" width="56" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Post">
+                                <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="NLL-rX-3e7" kind="presentation" modalTransitionStyle="flipHorizontal" id="FCY-bB-PlD"/>
+                                    <action selector="done:" destination="y5F-og-jLs" eventType="touchUpInside" id="hSu-4x-0u1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6w-Gb-bJ8">
@@ -220,11 +220,15 @@
                         <color key="backgroundColor" red="0.19559132940000001" green="0.19844964379999999" blue="0.19600528019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="NQM-Vu-SFA"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="czf-Ly-t5s" id="oXn-7i-o57"/>
+                        <segue destination="NLL-rX-3e7" kind="presentation" identifier="name" modalTransitionStyle="flipHorizontal" id="Bsf-Qr-BhO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9t-CH-5G8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="RcZ-4e-gra" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="704.79999999999995" y="31.934032983508249"/>
+            <point key="canvasLocation" x="89" y="32"/>
         </scene>
         <!--Mover Form View Controller-->
         <scene sceneID="b4U-kD-x9n">
@@ -361,11 +365,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUW-nv-dLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1382" y="32"/>
+            <point key="canvasLocation" x="89" y="-711"/>
         </scene>
         <!--Moving Post Page View Controller-->
         <scene sceneID="Khv-ca-aJU">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udR-vK-KGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="NLL-rX-3e7" customClass="Moving_Post_Page_ViewController" customModule="Move_It_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mUO-CY-ySI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -379,14 +384,23 @@
                                     <navigationItem id="dDf-wz-tBC"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oet-1w-FgQ">
+                                <rect key="frame" x="34" y="107" width="273" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.19559132940000001" green="0.19844964379999999" blue="0.19600528019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="TXU-CD-vWz"/>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="oet-1w-FgQ" id="Jky-ya-1Ts"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="udR-vK-KGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2085.5999999999999" y="31.934032983508249"/>
+            <point key="canvasLocation" x="828" y="31.934032983508249"/>
         </scene>
     </scenes>
     <resources>
