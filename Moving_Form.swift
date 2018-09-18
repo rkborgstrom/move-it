@@ -12,8 +12,6 @@ class Moving_Form: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
     
-    
-    
     var nameText = ""
     
     override func viewDidLoad() {
@@ -32,8 +30,7 @@ class Moving_Form: UIViewController {
         performSegue(withIdentifier: "name", sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var vc = segue.destination as! Moving_Post_Page_ViewController
+        let vc = segue.destination as! Moving_Post_Page_ViewController
         vc.finalName = self.nameText
     }
-
 }
