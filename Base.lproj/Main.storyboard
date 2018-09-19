@@ -28,7 +28,7 @@
                                 <items>
                                     <navigationItem id="8bm-vV-S6n">
                                         <nil key="title"/>
-                                        <button key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bvx-ri-BWK">
+                                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bvx-ri-BWK">
                                             <rect key="frame" x="168.5" y="7" width="38" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Login">
@@ -104,6 +104,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJn-ZK-ySX">
+                                <rect key="frame" x="245" y="557" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="maps"/>
+                                <connections>
+                                    <segue destination="5yB-eh-zWi" kind="presentation" modalTransitionStyle="flipHorizontal" id="kbB-Mk-ada"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1955913294397941" green="0.19844964378238339" blue="0.19600528020204025" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -113,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1257" y="32"/>
+            <point key="canvasLocation" x="-1258.4000000000001" y="31.934032983508249"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="VCo-4I-S3M">
@@ -511,11 +519,27 @@
             </objects>
             <point key="canvasLocation" x="828" y="31.934032983508249"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="5eh-0o-RTY">
+            <objects>
+                <viewController id="5yB-eh-zWi" customClass="V2ViewController" customModule="Move_It_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ULR-CU-LSG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.19559132940000001" green="0.19844964379999999" blue="0.19600528019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="uyY-eq-Thr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nFd-RJ-MaM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EEV-qj-N4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417" y="1585"/>
+        </scene>
     </scenes>
     <resources>
         <image name="truck.png" width="900" height="560"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Y5C-U2-X0B"/>
+        <segue reference="okD-Ur-RXD"/>
     </inferredMetricsTieBreakers>
 </document>

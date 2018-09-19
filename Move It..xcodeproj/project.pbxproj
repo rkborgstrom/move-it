@@ -17,6 +17,7 @@
 		1F48236B214B05FF00C8A050 /* Mover Form View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48236A214B05FF00C8A050 /* Mover Form View Controller.swift */; };
 		1F48236D215054A500C8A050 /* Moving Post Page ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48236C215054A500C8A050 /* Moving Post Page ViewController.swift */; };
 		1FAAED472152B2C200EBE54B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAED462152B2C200EBE54B /* LoginViewController.swift */; };
+		1FEA23342152D74900B56DB9 /* V2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEA23332152D74900B56DB9 /* V2ViewController.swift */; };
 		1FF2A15021519C9D00E70B6E /* Moving_Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF2A14F21519C9D00E70B6E /* Moving_Form.swift */; };
 		CF773B384D77375FC6146882 /* Pods_Move_It_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5941A14F5FC343206A4F0D7 /* Pods_Move_It_.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 947E933434A97E9A608F8C87901AE336;
 			remoteInfo = "Pods-Move It.";
+		};
+		1FEA23372152D74900B56DB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2627CD2152BA900011EB81 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B49336E7AEDDCF147C796266B3369DA9;
+			remoteInfo = IQKeyboardManagerSwift;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -45,6 +53,7 @@
 		1F48236A214B05FF00C8A050 /* Mover Form View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mover Form View Controller.swift"; sourceTree = "<group>"; };
 		1F48236C215054A500C8A050 /* Moving Post Page ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moving Post Page ViewController.swift"; sourceTree = "<group>"; };
 		1FAAED462152B2C200EBE54B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1FEA23332152D74900B56DB9 /* V2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2ViewController.swift; sourceTree = "<group>"; };
 		1FF2A14F21519C9D00E70B6E /* Moving_Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moving_Form.swift; sourceTree = "<group>"; };
 		962C70F7EA6B95B4671DA3AC /* Pods-Move It..debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Move It..debug.xcconfig"; path = "Pods/Target Support Files/Pods-Move It./Pods-Move It..debug.xcconfig"; sourceTree = "<group>"; };
 		B5941A14F5FC343206A4F0D7 /* Pods_Move_It_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Move_It_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +75,7 @@
 		1F2627CE2152BA900011EB81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				1FEA23382152D74900B56DB9 /* IQKeyboardManagerSwift.framework */,
 				1F2627D22152BA900011EB81 /* Pods_Move_It_.framework */,
 			);
 			name = Products;
@@ -98,6 +108,7 @@
 				1F482347214AD64300C8A050 /* ViewController.swift */,
 				1F48236A214B05FF00C8A050 /* Mover Form View Controller.swift */,
 				1F482349214AD64300C8A050 /* Main.storyboard */,
+				1FEA23332152D74900B56DB9 /* V2ViewController.swift */,
 				1FAAED462152B2C200EBE54B /* LoginViewController.swift */,
 				1FF2A14F21519C9D00E70B6E /* Moving_Form.swift */,
 				1F48236C215054A500C8A050 /* Moving Post Page ViewController.swift */,
@@ -138,6 +149,7 @@
 				1F48233F214AD64200C8A050 /* Frameworks */,
 				1F482340214AD64200C8A050 /* Resources */,
 				72EFA65A23400D97B1A2F1B1 /* [CP] Embed Pods Frameworks */,
+				656EE768134B4085C1ADD2DD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +207,13 @@
 			remoteRef = 1F2627D12152BA900011EB81 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		1FEA23382152D74900B56DB9 /* IQKeyboardManagerSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IQKeyboardManagerSwift.framework;
+			remoteRef = 1FEA23372152D74900B56DB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -213,20 +232,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		72EFA65A23400D97B1A2F1B1 /* [CP] Embed Pods Frameworks */ = {
+		656EE768134B4085C1ADD2DD /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Move It./Pods-Move It.-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Move It./Pods-Move It.-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72EFA65A23400D97B1A2F1B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Move It./Pods-Move It.-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 			);
@@ -265,6 +300,7 @@
 				1F48236B214B05FF00C8A050 /* Mover Form View Controller.swift in Sources */,
 				1FF2A15021519C9D00E70B6E /* Moving_Form.swift in Sources */,
 				1F48236D215054A500C8A050 /* Moving Post Page ViewController.swift in Sources */,
+				1FEA23342152D74900B56DB9 /* V2ViewController.swift in Sources */,
 				1F482346214AD64200C8A050 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

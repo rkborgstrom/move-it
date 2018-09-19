@@ -7,5 +7,7 @@ target 'Move It.' do
 
   # Pods for Move It.
  pod 'IQKeyboardManagerSwift'
+ pod 'GoogleMaps'
+ pod 'GooglePlaces'
  
 end
