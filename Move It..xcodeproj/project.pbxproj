@@ -16,10 +16,23 @@
 		1F482369214B044600C8A050 /* truck.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F482368214B044600C8A050 /* truck.png */; };
 		1F48236B214B05FF00C8A050 /* Mover Form View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48236A214B05FF00C8A050 /* Mover Form View Controller.swift */; };
 		1F48236D215054A500C8A050 /* Moving Post Page ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48236C215054A500C8A050 /* Moving Post Page ViewController.swift */; };
+		1FAAED472152B2C200EBE54B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAED462152B2C200EBE54B /* LoginViewController.swift */; };
 		1FF2A15021519C9D00E70B6E /* Moving_Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF2A14F21519C9D00E70B6E /* Moving_Form.swift */; };
+		CF773B384D77375FC6146882 /* Pods_Move_It_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5941A14F5FC343206A4F0D7 /* Pods_Move_It_.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1F2627D12152BA900011EB81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2627CD2152BA900011EB81 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 947E933434A97E9A608F8C87901AE336;
+			remoteInfo = "Pods-Move It.";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1F2627CD2152BA900011EB81 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		1F482342214AD64200C8A050 /* Move It..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Move It..app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F482345214AD64200C8A050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F482347214AD64300C8A050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +44,11 @@
 		1F482368214B044600C8A050 /* truck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = truck.png; path = ../../Desktop/truck.png; sourceTree = "<group>"; };
 		1F48236A214B05FF00C8A050 /* Mover Form View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mover Form View Controller.swift"; sourceTree = "<group>"; };
 		1F48236C215054A500C8A050 /* Moving Post Page ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moving Post Page ViewController.swift"; sourceTree = "<group>"; };
+		1FAAED462152B2C200EBE54B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1FF2A14F21519C9D00E70B6E /* Moving_Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moving_Form.swift; sourceTree = "<group>"; };
+		962C70F7EA6B95B4671DA3AC /* Pods-Move It..debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Move It..debug.xcconfig"; path = "Pods/Target Support Files/Pods-Move It./Pods-Move It..debug.xcconfig"; sourceTree = "<group>"; };
+		B5941A14F5FC343206A4F0D7 /* Pods_Move_It_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Move_It_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9E3FE137A700F08562693E /* Pods-Move It..release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Move It..release.xcconfig"; path = "Pods/Target Support Files/Pods-Move It./Pods-Move It..release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +56,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF773B384D77375FC6146882 /* Pods_Move_It_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F2627CE2152BA900011EB81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F2627D22152BA900011EB81 /* Pods_Move_It_.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1F482339214AD64200C8A050 = {
 			isa = PBXGroup;
 			children = (
 				1F482366214B018D00C8A050 /* Default-568h@2x.png */,
 				1F482344214AD64200C8A050 /* Move It. */,
 				1F482343214AD64200C8A050 /* Products */,
+				1F2627CD2152BA900011EB81 /* Pods.xcodeproj */,
+				3B78BE8ACE3269E9BBE95CE2 /* Pods */,
+				4D49031F3303A981DE56BC09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +98,7 @@
 				1F482347214AD64300C8A050 /* ViewController.swift */,
 				1F48236A214B05FF00C8A050 /* Mover Form View Controller.swift */,
 				1F482349214AD64300C8A050 /* Main.storyboard */,
+				1FAAED462152B2C200EBE54B /* LoginViewController.swift */,
 				1FF2A14F21519C9D00E70B6E /* Moving_Form.swift */,
 				1F48236C215054A500C8A050 /* Moving Post Page ViewController.swift */,
 				1F48234C214AD64400C8A050 /* Assets.xcassets */,
@@ -79,6 +109,23 @@
 			name = "Move It.";
 			sourceTree = "<group>";
 		};
+		3B78BE8ACE3269E9BBE95CE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				962C70F7EA6B95B4671DA3AC /* Pods-Move It..debug.xcconfig */,
+				EF9E3FE137A700F08562693E /* Pods-Move It..release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4D49031F3303A981DE56BC09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5941A14F5FC343206A4F0D7 /* Pods_Move_It_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F482354214AD64400C8A050 /* Build configuration list for PBXNativeTarget "Move It." */;
 			buildPhases = (
+				BA7FEF8BFE5C68062482B45C /* [CP] Check Pods Manifest.lock */,
 				1F48233E214AD64200C8A050 /* Sources */,
 				1F48233F214AD64200C8A050 /* Frameworks */,
 				1F482340214AD64200C8A050 /* Resources */,
+				72EFA65A23400D97B1A2F1B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +174,28 @@
 			mainGroup = 1F482339214AD64200C8A050;
 			productRefGroup = 1F482343214AD64200C8A050 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1F2627CE2152BA900011EB81 /* Products */;
+					ProjectRef = 1F2627CD2152BA900011EB81 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1F482341214AD64200C8A050 /* Move It. */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1F2627D22152BA900011EB81 /* Pods_Move_It_.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_Move_It_.framework;
+			remoteRef = 1F2627D12152BA900011EB81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1F482340214AD64200C8A050 /* Resources */ = {
@@ -147,11 +212,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		72EFA65A23400D97B1A2F1B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Move It./Pods-Move It.-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Move It./Pods-Move It.-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA7FEF8BFE5C68062482B45C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Move It.-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F48233E214AD64200C8A050 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FAAED472152B2C200EBE54B /* LoginViewController.swift in Sources */,
 				1F482348214AD64300C8A050 /* ViewController.swift in Sources */,
 				1F48236B214B05FF00C8A050 /* Mover Form View Controller.swift in Sources */,
 				1FF2A15021519C9D00E70B6E /* Moving_Form.swift in Sources */,
@@ -298,6 +407,7 @@
 		};
 		1F482355214AD64400C8A050 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 962C70F7EA6B95B4671DA3AC /* Pods-Move It..debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +426,7 @@
 		};
 		1F482356214AD64400C8A050 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF9E3FE137A700F08562693E /* Pods-Move It..release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

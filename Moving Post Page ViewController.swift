@@ -16,6 +16,7 @@ class Moving_Post_Page_ViewController: UIViewController {
     
     var finalName = ""
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +34,9 @@ class Moving_Post_Page_ViewController: UIViewController {
                 let jsonResponse = try JSONSerialization.jsonObject(with:
                     dataResponse, options: [])
                 print(jsonResponse) //Response result
+        
+    
+                
             } catch let parsingError {
                 print("Error", parsingError)
             }
