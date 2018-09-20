@@ -9,5 +9,6 @@ target 'Move It.' do
  pod 'IQKeyboardManagerSwift'
  pod 'GoogleMaps'
  pod 'GooglePlaces'
- 
+ pod 'Alamofire'
+ pod 'SwiftyJSON'
 end
