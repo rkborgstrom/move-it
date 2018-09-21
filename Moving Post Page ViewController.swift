@@ -14,19 +14,10 @@ class Moving_Post_Page_ViewController: UIViewController, UITableViewDelegate, UI
     
     @IBOutlet weak var tableView: UITableView!
 
-    
     var arrRes = [[String:AnyObject]]()
-    
-    
-//    var userData = ""
     var usersArr = [String]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        BandData.text = bandData
-        
-        
         
         Alamofire.request("https://gentle-tor-12481.herokuapp.com/all_users").responseJSON { (responseData) -> Void in
             if((responseData.result.value) != nil) {

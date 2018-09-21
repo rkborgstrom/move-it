@@ -20,6 +20,7 @@
 		1F8DAE0221548CD7004791BA /* UsersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAE0121548CD7004791BA /* UsersCell.swift */; };
 		1F8DAE0421548F2A004791BA /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAE0321548F2A004791BA /* Users.swift */; };
 		1F8DAE08215550E8004791BA /* CustomizedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAE07215550E8004791BA /* CustomizedTableViewCell.swift */; };
+		1F8DAE0A215565CF004791BA /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAE09215565CF004791BA /* MoreInfoViewController.swift */; };
 		1FAAED472152B2C200EBE54B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAED462152B2C200EBE54B /* LoginViewController.swift */; };
 		1FEA23342152D74900B56DB9 /* V2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEA23332152D74900B56DB9 /* V2ViewController.swift */; };
 		1FF2A15021519C9D00E70B6E /* Moving_Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF2A14F21519C9D00E70B6E /* Moving_Form.swift */; };
@@ -74,6 +75,7 @@
 		1F8DAE0121548CD7004791BA /* UsersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCell.swift; sourceTree = "<group>"; };
 		1F8DAE0321548F2A004791BA /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		1F8DAE07215550E8004791BA /* CustomizedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedTableViewCell.swift; sourceTree = "<group>"; };
+		1F8DAE09215565CF004791BA /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 		1FAAED462152B2C200EBE54B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1FEA23332152D74900B56DB9 /* V2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2ViewController.swift; sourceTree = "<group>"; };
 		1FF2A14F21519C9D00E70B6E /* Moving_Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moving_Form.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				1F482347214AD64300C8A050 /* ViewController.swift */,
 				1F48236A214B05FF00C8A050 /* Mover Form View Controller.swift */,
 				1F482349214AD64300C8A050 /* Main.storyboard */,
+				1F8DAE09215565CF004791BA /* MoreInfoViewController.swift */,
 				1F8DAE0321548F2A004791BA /* Users.swift */,
 				1F8DAE0121548CD7004791BA /* UsersCell.swift */,
 				1F8DADFB21548C08004791BA /* TestViewController.swift */,
@@ -350,6 +353,7 @@
 				1F48236D215054A500C8A050 /* Moving Post Page ViewController.swift in Sources */,
 				1FEA23342152D74900B56DB9 /* V2ViewController.swift in Sources */,
 				1F482346214AD64200C8A050 /* AppDelegate.swift in Sources */,
+				1F8DAE0A215565CF004791BA /* MoreInfoViewController.swift in Sources */,
 				1F8DAE08215550E8004791BA /* CustomizedTableViewCell.swift in Sources */,
 				1F8DAE0221548CD7004791BA /* UsersCell.swift in Sources */,
 			);
