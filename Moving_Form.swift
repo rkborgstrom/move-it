@@ -31,8 +31,8 @@ class Moving_Form: UIViewController {
     }
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! Moving_Post_Page_ViewController
-        vc.finalName = self.nameText
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vc = segue.destination as! Moving_Post_Page_ViewController
+//        vc.finalName = self.nameText
+//    }
 }
