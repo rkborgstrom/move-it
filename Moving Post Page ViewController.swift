@@ -14,6 +14,8 @@ class Moving_Post_Page_ViewController: UIViewController, UITableViewDelegate, UI
     
     @IBOutlet weak var tableView: UITableView!
 
+    var movingData = ""
+    
     var arrRes = [[String:AnyObject]]()
     var usersArr = [String]()
     override func viewDidLoad() {
@@ -45,5 +47,6 @@ class Moving_Post_Page_ViewController: UIViewController, UITableViewDelegate, UI
         cell.textLabel?.text = dict["moving_username"] as? String
         cell.detailTextLabel?.text = dict["moving_location"] as? String
         return cell
+  }
 }
-}
+

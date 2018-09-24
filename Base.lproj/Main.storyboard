@@ -225,6 +225,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="usernameLBL:" destination="RcZ-4e-gra" eventType="editingDidEnd" id="nwF-Bu-cbm"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date I need to move on:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxa-jL-8TH">
                                 <rect key="frame" x="50" y="164" width="182" height="21"/>
@@ -279,17 +282,6 @@
                                     <navigationItem id="m9j-wF-cqd"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9l-FK-MrN">
-                                <rect key="frame" x="159" y="536" width="56" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Done">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="done:" destination="y5F-og-jLs" eventType="touchUpInside" id="hSu-4x-0u1"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What do you need moved?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuI-2t-0Xa">
                                 <rect key="frame" x="50" y="389" width="204" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -297,13 +289,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z2h-v7-VTY">
-                                <rect key="frame" x="67" y="418" width="240" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qP7-jf-ElS">
                                 <rect key="frame" x="85" y="82" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -321,12 +306,26 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="flipHorizontal" id="Y5C-U2-X0B"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzL-QT-zWZ">
+                                <rect key="frame" x="163" y="527" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="SubmitButton:" destination="y5F-og-jLs" eventType="touchUpInside" id="aeE-qT-2b6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.19559132940000001" green="0.19844964379999999" blue="0.19600528019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="NQM-Vu-SFA"/>
                     </view>
                     <connections>
+                        <outlet property="dateLBL" destination="IBR-F6-pFd" id="MAd-bP-fW8"/>
+                        <outlet property="locationLBL" destination="PQc-8c-HeE" id="qk9-zo-8Ss"/>
                         <outlet property="textField" destination="czf-Ly-t5s" id="oXn-7i-o57"/>
+                        <outlet property="timeLBL" destination="3s3-t6-OQ0" id="dls-9P-q1l"/>
+                        <outlet property="usernameLBL" destination="czf-Ly-t5s" id="L6U-3d-GtN"/>
                         <segue destination="NLL-rX-3e7" kind="presentation" identifier="name" modalTransitionStyle="flipHorizontal" id="Bsf-Qr-BhO"/>
                     </connections>
                 </viewController>
@@ -639,7 +638,7 @@
         <image name="truck.png" width="900" height="560"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kbB-Mk-ada"/>
-        <segue reference="Tq7-Fh-dIb"/>
+        <segue reference="H6j-CU-ute"/>
+        <segue reference="Y5C-U2-X0B"/>
     </inferredMetricsTieBreakers>
 </document>
