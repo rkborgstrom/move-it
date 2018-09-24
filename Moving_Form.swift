@@ -19,7 +19,7 @@ class Moving_Form: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var locationLBL: UITextField!
     @IBOutlet weak var textField: UITextField!
 
-    
+    @IBOutlet weak var objectsLBL: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +27,7 @@ class Moving_Form: UIViewController, UITextFieldDelegate {
         dateLBL.delegate = self
         timeLBL.delegate = self
         locationLBL.delegate = self
+        objectsLBL.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,13 +35,15 @@ class Moving_Form: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func SubmitButton(_ sender: Any) {
-//        performSegue(withIdentifier: "cell", sender: self)
+        performSegue(withIdentifier: "movingInfo", sender: self)
         
             let parameters = [
                 "moving_username": "\(usernameLBL.text!)",
                 "moving_date": "\(dateLBL.text!)",
                 "moving_time": "\(timeLBL.text!)",
                 "moving_location": "\(locationLBL.text!)",
+                "moving_objects": "\(objectsLBL.text!)",
+
             ]
             
             Alamofire.request("https://gentle-tor-12481.herokuapp.com/all_users", method: .post, parameters: parameters,encoding: JSONEncoding.default, headers: nil).responseJSON {
@@ -66,6 +69,7 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     dateLBL.resignFirstResponder()
     timeLBL.resignFirstResponder()
     locationLBL.resignFirstResponder()
+    objectsLBL.resignFirstResponder()
 }
 
 func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -81,6 +85,9 @@ func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     }else if textField == locationLBL{
         textField.resignFirstResponder()
         locationLBL.becomeFirstResponder()
+    }else if textField == objectsLBL{
+        textField.resignFirstResponder()
+        objectsLBL.becomeFirstResponder()
     }
     return true
 }

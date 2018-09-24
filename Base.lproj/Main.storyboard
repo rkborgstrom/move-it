@@ -283,7 +283,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What do you need moved?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuI-2t-0Xa">
-                                <rect key="frame" x="50" y="389" width="204" height="21"/>
+                                <rect key="frame" x="50" y="367" width="204" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -306,9 +306,17 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="flipHorizontal" id="Y5C-U2-X0B"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzL-QT-zWZ">
-                                <rect key="frame" x="163" y="527" width="49" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Spb-Iz-AXc">
+                                <rect key="frame" x="53" y="396" width="276" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NzL-QT-zWZ">
+                                <rect key="frame" x="158" y="453" width="65" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -323,16 +331,17 @@
                     <connections>
                         <outlet property="dateLBL" destination="IBR-F6-pFd" id="MAd-bP-fW8"/>
                         <outlet property="locationLBL" destination="PQc-8c-HeE" id="qk9-zo-8Ss"/>
+                        <outlet property="objectsLBL" destination="Spb-Iz-AXc" id="Nnt-L6-ISQ"/>
                         <outlet property="textField" destination="czf-Ly-t5s" id="oXn-7i-o57"/>
                         <outlet property="timeLBL" destination="3s3-t6-OQ0" id="dls-9P-q1l"/>
                         <outlet property="usernameLBL" destination="czf-Ly-t5s" id="L6U-3d-GtN"/>
-                        <segue destination="NLL-rX-3e7" kind="presentation" identifier="name" modalTransitionStyle="flipHorizontal" id="Bsf-Qr-BhO"/>
+                        <segue destination="NLL-rX-3e7" kind="presentation" identifier="movingInfo" modalTransitionStyle="flipHorizontal" id="Bsf-Qr-BhO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9t-CH-5G8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="RcZ-4e-gra" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-334" y="32"/>
+            <point key="canvasLocation" x="-335.19999999999999" y="31.934032983508249"/>
         </scene>
         <!--Mover Form View Controller-->
         <scene sceneID="b4U-kD-x9n">
