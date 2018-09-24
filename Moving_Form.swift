@@ -18,7 +18,6 @@ class Moving_Form: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var timeLBL: UITextField!
     @IBOutlet weak var locationLBL: UITextField!
     @IBOutlet weak var textField: UITextField!
-
     @IBOutlet weak var objectsLBL: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +42,6 @@ class Moving_Form: UIViewController, UITextFieldDelegate {
                 "moving_time": "\(timeLBL.text!)",
                 "moving_location": "\(locationLBL.text!)",
                 "moving_objects": "\(objectsLBL.text!)",
-
             ]
             
             Alamofire.request("https://gentle-tor-12481.herokuapp.com/all_users", method: .post, parameters: parameters,encoding: JSONEncoding.default, headers: nil).responseJSON {
@@ -59,10 +57,10 @@ class Moving_Form: UIViewController, UITextFieldDelegate {
             }
         }
     
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            let vc = segue.destination as! Moving_Post_Page_ViewController
-            vc.movingData = self.movingInfo
-        }
+//        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            let vc = segue.destination as! Moving_Post_Page_ViewController
+//            vc.movingData = self.movingInfo
+//        }
     
 override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     usernameLBL.resignFirstResponder()
@@ -90,7 +88,7 @@ func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         objectsLBL.becomeFirstResponder()
     }
     return true
-}
+ }
 }
 
 extension ViewController : UITextFieldDelegate {

@@ -1,28 +1,26 @@
-////
-////  all_users.swift
-////  Move It.
-////
-////  Created by Ryan Borgstrom on 9/20/18.
-////  Copyright © 2018 Ryan Borgstrom. All rights reserved.
-////
 //
-//import UIKit
+//  all_users.swift
+//  Move It.
 //
-//class UsersCell: UITableViewCell {
+//  Created by Ryan Borgstrom on 9/20/18.
+//  Copyright © 2018 Ryan Borgstrom. All rights reserved.
 //
-//    @IBOutlet weak var usernameLBL: UILabel!
-////    @IBOutlet weak var timeLBL: UILabel!
-//    @IBOutlet weak var dateLBL: UILabel!
-//    @IBOutlet weak var objectsLBL: UILabel!
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        // Initialization code
-//    }
-//
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
-//
-//}
+
+import UIKit
+
+class UsersCell: UITableViewCell {
+
+
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+
+}
