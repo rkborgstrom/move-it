@@ -11,4 +11,5 @@ target 'Move It.' do
  pod 'GooglePlaces'
  pod 'Alamofire'
  pod 'SwiftyJSON'
+ pod 'LocalAuthentication'
 end

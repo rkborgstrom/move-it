@@ -21,7 +21,7 @@ class Moving_Post_Page_ViewController: UIViewController, UITableViewDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Alamofire.request("https://gentle-tor-12481.herokuapp.com/all_users").responseJSON { (responseData) -> Void in
+        Alamofire.request("https://gentle-tor-12481.herokuapp.com/all_users/").responseJSON { (responseData) -> Void in
             if((responseData.result.value) != nil) {
                 let swiftyJsonVar = JSON(responseData.result.value!)
                 //                print(swiftyJsonVar)

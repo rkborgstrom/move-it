@@ -19,6 +19,7 @@ class Moving_Form: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var locationLBL: UITextField!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var objectsLBL: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -88,7 +89,7 @@ func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         objectsLBL.becomeFirstResponder()
     }
     return true
- }
+   }
 }
 
 extension ViewController : UITextFieldDelegate {

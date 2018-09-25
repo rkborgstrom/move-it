@@ -19,9 +19,10 @@ class V2ViewController: UIViewController {
         // Creates a marker in the center of the map.
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: 39.693858, longitude: -105.008426)
-        marker.title = "Denver"
-        marker.snippet = "Colorado"
+        marker.title = "1223 S Raritan St."
+        marker.snippet = "Denver, Colorado"
         marker.map = mapView
-    }
-}
 
+    }
+    
+}

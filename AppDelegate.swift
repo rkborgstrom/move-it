@@ -9,6 +9,8 @@
 import UIKit
 import IQKeyboardManagerSwift
 import GoogleMaps
+import LocalAuthentication
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
