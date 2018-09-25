@@ -13,9 +13,6 @@ import SwiftyJSON
 
 class Mover_Post_Page_ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var userLBL: UILabel!
-    
-    @IBOutlet weak var locationLBL: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     var movingData = ""
