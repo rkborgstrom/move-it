@@ -1,21 +1,21 @@
 //
-//  all_users.swift
+//  MyCustomCell.swift
 //  Move It.
 //
-//  Created by Ryan Borgstrom on 9/20/18.
+//  Created by Ryan Borgstrom on 9/25/18.
 //  Copyright © 2018 Ryan Borgstrom. All rights reserved.
 //
 
 import UIKit
 
-class UsersCell: UITableViewCell {
-
+class MyCustomCell: UITableViewCell {
+    
+    
     @IBOutlet weak var moving_username: UILabel!
     @IBOutlet weak var moving_date: UILabel!
     @IBOutlet weak var moving_location: UILabel!
     @IBOutlet weak var moving_objects: UILabel!
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
