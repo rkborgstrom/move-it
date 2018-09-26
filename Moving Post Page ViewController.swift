@@ -10,9 +10,6 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-
-
-
 class Moving_Post_Page_ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var arrRes = [[String:AnyObject]]()
@@ -21,8 +18,6 @@ class Moving_Post_Page_ViewController: UIViewController, UITableViewDelegate, UI
     
     @IBOutlet weak var tableView: UITableView!
 
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -205,6 +205,10 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="YP5-Rz-n98"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fb" translatesAutoresizingMaskIntoConstraints="NO" id="NWo-s0-H2D">
+                                <rect key="frame" x="78" y="327" width="219" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.19559132940000001" green="0.19844964379999999" blue="0.19600528019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="TuU-YB-pOS"/>
@@ -212,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="53q-9O-Jj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2177" y="1183"/>
+            <point key="canvasLocation" x="-2178.4000000000001" y="1181.5592203898052"/>
         </scene>
         <!--Moving_Form-->
         <scene sceneID="Ig3-0j-jdo">
@@ -500,14 +504,14 @@
                                 <items>
                                     <navigationItem id="dDf-wz-tBC">
                                         <nil key="title"/>
-                                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JYF-lM-xEC">
-                                            <rect key="frame" x="167" y="7" width="41" height="30"/>
+                                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HCb-9u-2Yj">
+                                            <rect key="frame" x="112.5" y="7" width="150" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Home">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="flipHorizontal" id="5sd-2H-yeO"/>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="cell" modalTransitionStyle="flipHorizontal" id="yVV-cR-qbS"/>
                                             </connections>
                                         </button>
                                     </navigationItem>
@@ -578,8 +582,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="aIe-p4-R6M">
                         <nil key="title"/>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="agX-yk-h16" userLabel="Movers">
-                            <rect key="frame" x="112.5" y="7" width="150" height="30"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="agX-yk-h16" userLabel="Movers">
+                            <rect key="frame" x="112.5" y="2.5" width="150" height="39"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                             <state key="normal" title="Movers">
@@ -703,6 +707,14 @@
                                 <color key="textColor" red="0.95294117649999999" green="0.99607843139999996" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzz-Pe-c3i">
+                                <rect key="frame" x="106" y="540" width="166" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Connect with mover.">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.19559132940000001" green="0.19844964379999999" blue="0.19600528019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="gZT-At-66u"/>
@@ -866,6 +878,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="fb" width="800" height="300"/>
         <image name="texturedBG" width="1242" height="2208"/>
         <image name="truck.png" width="900" height="560"/>
     </resources>
@@ -874,6 +887,6 @@
         <segue reference="XOe-eu-Nnx"/>
         <segue reference="a82-AA-S3w"/>
         <segue reference="AN9-PN-327"/>
-        <segue reference="Tq7-Fh-dIb"/>
+        <segue reference="yVV-cR-qbS"/>
     </inferredMetricsTieBreakers>
 </document>
