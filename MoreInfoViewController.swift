@@ -29,12 +29,12 @@ var index: Int!
             if((responseData.result.value) != nil) {
                 let swiftyJsonVar = JSON(responseData.result.value!)
                 let all_users = swiftyJsonVar["all_users"]
-                let mover_username = all_users["mover_username"]
+                let mover_username = all_users["moving_username"]
                 let mover_price = all_users["mover_price"]
                 let mover_date = all_users["mover_date"]
                 let strDate = "\(mover_date)"
                 let newDate = strDate.prefix(10)
-                let mover_location = all_users["mover_location"]
+                let mover_location = all_users["moving_location"]
 
                 
                 self.mover_username?.text = ("\(mover_username)")

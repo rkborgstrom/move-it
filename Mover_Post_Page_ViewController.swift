@@ -46,7 +46,7 @@ class Mover_Post_Page_ViewController: UIViewController, UITableViewDelegate, UIT
         var dict = arrRes[(indexPath as NSIndexPath).row]
         print(dict)
         cell.textLabel?.text = dict["mover_username"] as? String
-        cell.detailTextLabel?.text = dict["mover_location"] as? String
+        cell.detailTextLabel?.text = dict["mover_location"] as? String 
         return cell
     }
 }
