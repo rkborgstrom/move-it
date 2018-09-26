@@ -10,14 +10,19 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
+
+
+
 class Moving_Post_Page_ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var arrRes = [[String:AnyObject]]()
+    var myIndex = 0
+    var movingData = ""
     
     @IBOutlet weak var tableView: UITableView!
 
-    var movingData = ""
+
     
-    var arrRes = [[String:AnyObject]]()
-    var usersArr = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,18 +40,41 @@ class Moving_Post_Page_ViewController: UIViewController, UITableViewDelegate, UI
             }
         }
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indexPath = tableView.indexPathForSelectedRow
+        let index = indexPath?.row
+        let movingDetails = arrRes[index!]
+        let movingID = movingDetails["id"]
+        let detailViewController = segue.destination as! MoreInfoViewController
+      detailViewController.index = movingID as! Int
+  }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrRes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         var dict = arrRes[(indexPath as NSIndexPath).row]
-        print(dict)
-        cell.textLabel?.text = dict["moving_username"] as? String
-        cell.detailTextLabel?.text = dict["moving_location"] as? String
+        let id = (dict["id"])
+        cell.textLabel?.text = dict["moving_location"] as? String
+        cell.detailTextLabel?.text = String(describing: id!)
+        
         return cell
-  }
 }
+
+    override func viewDidAppear(_ animated: Bool) {
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+           myIndex = indexPath.row
+            performSegue(withIdentifier: "cell", sender: self)
+   }
+}
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+}
+
 

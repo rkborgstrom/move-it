@@ -1,21 +1,18 @@
 //
-//  MyTableViewCell.swift
+//  CustCell.swift
 //  Move It.
 //
-//  Created by Ryan Borgstrom on 9/25/18.
+//  Created by Ryan Borgstrom on 9/26/18.
 //  Copyright © 2018 Ryan Borgstrom. All rights reserved.
 //
 
 import UIKit
 
-class MyTableViewCell: UITableViewCell {
+class CustCell: UITableViewCell {
 
     @IBOutlet weak var moving_username: UILabel!
-    @IBOutlet weak var moving_date: UILabel!
+    
     @IBOutlet weak var moving_location: UILabel!
-    @IBOutlet weak var moving_objects: UILabel!
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()

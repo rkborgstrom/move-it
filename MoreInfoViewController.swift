@@ -7,37 +7,43 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 
-//var index: Int!
 
 class MoreInfoViewController: UIViewController {
-
-//    @IBOutlet weak var moving_username: UILabel!
+var index: Int!
     
+    @IBOutlet weak var moving_username: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        moving_username.text = ("\(moving_username!)")
+        
+        Alamofire.request("hhttps://gentle-tor-12481.herokuapp.com/all_users/\(index)").responseJSON { (responseData) -> Void in
+            if((responseData.result.value) != nil) {
+                let swiftyJsonVar = JSON(responseData.result.value!)
+                print(swiftyJsonVar)
+            }
+        }
+        
+        
+        
+        
+        moving_username.text = ("You tapped the cell at index \(index)")
+        
+        
+        
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
