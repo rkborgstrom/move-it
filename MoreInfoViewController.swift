@@ -8,10 +8,18 @@
 
 import UIKit
 
+
+//var index: Int!
+
 class MoreInfoViewController: UIViewController {
 
+//    @IBOutlet weak var moving_username: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+//        moving_username.text = ("\(moving_username!)")
 
         // Do any additional setup after loading the view.
     }
