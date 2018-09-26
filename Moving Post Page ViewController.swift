@@ -59,7 +59,7 @@ class Moving_Post_Page_ViewController: UIViewController, UITableViewDelegate, UI
         var dict = arrRes[(indexPath as NSIndexPath).row]
         let id = (dict["id"])
         cell.textLabel?.text = dict["moving_location"] as? String
-        cell.detailTextLabel?.text = String(describing: id!)
+        cell.detailTextLabel?.text = dict["moving_username"] as? String
         
         return cell
 }
