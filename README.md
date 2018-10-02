@@ -1,5 +1,5 @@
 ## Project Description
-Move It. A peer-to-peer web application that enables users who are in the process of moving to connect with users who own a truck and can help them out. This app will allow truck owners to set a price for the day and even help them move. It will help save money for the user that is moving, as well as allow the mover to make some extra money on the side. 
+Move It. A peer-to-peer mobile application that enables users who are in the process of moving to connect with users who own a truck and can help them out. This app will allow truck owners to set a price for the day and even help them move. It will help save money for the user that is moving, as well as allow the mover to make some extra money on the side. 
 
 ## Problem Statement
 People are always looking to move and many don't want to pay a moving company or rent a U-Haul.
@@ -20,24 +20,15 @@ By connecting users who wish to move and users who own a truck depending on thei
 * As a user that is moving, I want to post details on what I need moved. 
 * As a user that is moving, I want to connect with movers. 
 
-## What technologies do you plan to use?
-
-* MongoDB
-  * Mongoose
+## Technologies
 * Express Server
 * Swift
 * XCode
 * Node.js
-
-**Stretch**  
-* Stripe.js
+* Postgres DB
 * Google Maps API
 
 ## ERD - Entity Relationship Diagram
-
-* ![ERD](https://github.com/rkborgstrom/move-it/blob/master/Images/Screen%20Shot%202018-09-14%20at%2010.20.29%20AM.png)
-
-
 
 ## Wireframes
 * ![ERD](https://github.com/rkborgstrom/move-it/blob/master/Images/Screen%20Shot%202018-09-14%20at%2010.16.30%20AM.png)

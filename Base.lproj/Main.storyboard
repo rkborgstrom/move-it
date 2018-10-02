@@ -644,8 +644,8 @@
                                     <segue destination="5yB-eh-zWi" kind="presentation" modalTransitionStyle="flipHorizontal" id="a82-AA-S3w"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price/Hr." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vuy-E2-1ie">
-                                <rect key="frame" x="0.0" y="176" width="375" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price/Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vuy-E2-1ie">
+                                <rect key="frame" x="0.0" y="176" width="375" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -887,6 +887,6 @@
         <segue reference="XOe-eu-Nnx"/>
         <segue reference="a82-AA-S3w"/>
         <segue reference="AN9-PN-327"/>
-        <segue reference="yVV-cR-qbS"/>
+        <segue reference="Tq7-Fh-dIb"/>
     </inferredMetricsTieBreakers>
 </document>
