@@ -34,6 +34,6 @@ By connecting users who wish to move and users who own a truck depending on thei
 * ![ERD](https://github.com/rkborgstrom/move-it/blob/master/Images/Screen%20Shot%202018-09-14%20at%2010.16.30%20AM.png)
 
 ## Photos
-* ![Preview]https://github.com/rkborgstrom/move-it/blob/master/Images/HomePage.png
+* ![Preview](https://github.com/rkborgstrom/move-it/blob/master/Images/Home.png)
 
-* ![Preview](https://github.com/rkborgstrom/move-it/blob/master/Images/DataPage.png)
+* ![Preview](https://github.com/rkborgstrom/move-it/blob/master/Images/Data.png)
